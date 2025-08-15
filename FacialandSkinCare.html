@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facials & Skincare | Blush & Bloom Beauty Bar</title>
+  <meta name="description" content="Explore our luxury facial and skincare treatments at Blush & Bloom Beauty Bar – see our prices, packages, and treatment gallery." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css"> <!-- Use your same CSS -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Blush & <span>Bloom</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('images/facial-hero.jpg') no-repeat center center/cover;">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Facials & Skincare</h1>
+        <p>Indulge in rejuvenating treatments that leave your skin glowing, refreshed, and radiant.</p>
+        <a href="#pricing" class="btn">See Prices</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Facials -->
+  <section class="about" id="about-facials">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Our Skincare Philosophy</h2>
+          <p>At Blush & Bloom, we tailor every facial to your unique skin type and needs. Using only premium, cruelty-free products, our treatments deeply cleanse, hydrate, and restore your skin’s natural balance.</p>
+          <p>From anti-ageing therapies to deep-cleansing treatments, our experienced estheticians ensure every session leaves you feeling refreshed and confident.</p>
+        </div>
+        <div class="about-img">
+          <img src="images/facial-treatment.jpg" alt="Luxury Facial Treatment" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="services" id="pricing">
+    <div class="container">
+      <div class="section-title">
+        <h2>Facial & Skincare Prices</h2>
+      </div>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Classic Facial</h3>
+          <p>Deep cleansing, gentle exfoliation, and a hydrating mask for fresh, radiant skin.</p>
+          <strong>£45 – 60 mins</strong>
+        </div>
+        <div class="service-card">
+          <h3>Hydrating Facial</h3>
+          <p>Intensely moisturizing treatment to restore softness and suppleness.</p>
+          <strong>£55 – 75 mins</strong>
+        </div>
+        <div class="service-card">
+          <h3>Anti-Ageing Facial</h3>
+          <p>Target fine lines and boost collagen for youthful, glowing skin.</p>
+          <strong>£65 – 90 mins</strong>
+        </div>
+        <div class="service-card">
+          <h3>Deep Cleansing Facial</h3>
+          <p>Purify pores and remove impurities for a clearer, healthier complexion.</p>
+          <strong>£50 – 70 mins</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facial Gallery -->
+  <section class="gallery">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Facial Treatments</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/facial1.jpg" alt="Classic Facial"></div>
+        <div class="gallery-item"><img src="images/facial2.jpg" alt="Hydrating Facial"></div>
+        <div class="gallery-item"><img src="images/facial3.jpg" alt="Anti-Ageing Facial"></div>
+        <div class="gallery-item"><img src="images/facial4.jpg" alt="Deep Cleansing Facial"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="booking">
+    <div class="container">
+      <h2>Book Your Facial Today</h2>
+      <p>Experience the ultimate in skincare luxury. Our team is ready to help you achieve your best skin yet.</p>
+      <a href="tel:+447835189700" class="btn">Call Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Blush & Bloom Beauty Bar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
